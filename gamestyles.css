@@ -1,0 +1,220 @@
+
+/*The following css file is used to style the index html page which is the
+  memory game webpage
+  author: Lyrene Labor, 1541901
+  version: Feb 2017
+*/
+
+
+/*
+  The following styles are used to make sure the webpage will cover the whole
+  browser screen in width and in height no matter the size of the window
+*/
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body, #wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+
+/*
+  The following style will set up the background image of the webpage
+  as a whole with a url image, making sure it covers the while window screen
+*/
+body {
+  background-image: url("images/backgroundPage.gif");
+  background-size: 100% 100%;
+}
+
+/*
+  The following sets the font family style of all headers, buttons and lists on
+  the webpage
+*/
+h1, h2, button, ul {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+/*
+  the following will set the specific styles of h1 and h2 tag by making
+  the h1 tag more prominent since it serves as the title of the webpage
+*/
+h1 {
+  font-size: 320%;
+  text-shadow: 4px 4px #6D6968;
+  color: #FDD017;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 200%;
+  text-decoration: underline;
+  color: #2B3856;
+  font-weight: bold;
+}
+
+/*
+  The following will make sure that the footer and the button elements
+  of the webpage will be positioned at the center
+*/
+footer, button {
+  text-align: center;
+  margin-top: 5px;
+}
+
+/*
+  The following will style the buttons of the webpage by setting its size,
+  position, color and also the hover effect when the cursor points to the
+  buttons
+*/
+button {
+  background-color: #FFDB58;
+  height: 15%;
+  width: 20%;
+  color: #565051;
+  font-weight: bold;
+  font-size: 120%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+   box-shadow: 0 5px 10px 0 , 0 5px 10px 0;
+}
+
+
+/*
+  The following will style the instruction list on the webpage such as the font
+  size, the spaces between the list elements, etc
+*/
+ul {
+  font-size: 135%;
+  font-weight: bold;
+  color: #151B54;
+  line-height: 130%;
+  margin-top: 5%;
+  position: absolute;
+}
+
+li {
+  margin-top: 3%;
+}
+
+
+
+/*
+  The following will set the style, positioning, size of all the images
+  of the middle layer and the top layer of the board game. The images on the
+  middle layer should be placed under the images of the top layer with the
+  z-index property and the position and float properties will make sure that
+  all of the images will be placed and positioned based on the board.
+*/
+.middletile, .toptile {
+  width: 25%;
+  height: 25%;
+  float: left;
+  overflow: hidden;
+  border: solid 1px #4863A0;
+  position: relative;
+}
+
+.middletile {
+  z-index: -10;
+}
+
+.toptile {
+  z-index: 10;
+}
+
+.toptile:hover {
+  box-shadow: 0 0 15px black;
+  cursor: pointer;
+}
+
+/*
+  This will make sure that the spongebob title header will be slightly bigger
+  then the rest of the title
+*/
+#spongebobTitle{
+  font-size: 350%;
+
+}
+
+/*
+  The following will placed the board and the wrapper at the center of
+  the webpage
+*/
+#board, #wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+  The wrapper div should have a width of 100% in order to have enough space
+  for the intructions section to be placed right beside the board game
+*/
+#wrapper{
+  width:100%;
+  display: inline-block;
+}
+
+/*
+  The following will style the board game of the webpage and will make sure
+  that the images that it will contain will be placed one after each other or
+  inline
+*/
+#board {
+  margin-top: 0.5%;
+  position: relative;
+  width: 48%;
+  height: 70%;
+  border: solid 10px  #4863A0;
+  display: inline-block;
+  margin-left: 26%;
+  box-shadow: 5px 5px 5px #6D6968;
+}
+
+/*
+  The following will take care of the positioning of the sections that will
+  contain the bottom, middle and top layer of the board. They are the sections
+  that will contain the different images. The bottom section will have
+  the lowest index to be at the bottom, the middle section will have a bigger
+  index to be placed on top of the bottom section and the top section will have
+  the biggest index of them all in order to be placed the very top of all
+  sections
+*/
+#middle, #top, #bottomPic {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#bottomPic {
+  z-index: -20;
+}
+
+#middle{
+    z-index: -1;
+}
+
+#top {
+  z-index: 10;
+}
+
+/*
+  The following will make the section containing the instructions of the game
+  be placed beside the board game, on the right side.
+*/
+#gamerules {
+  float: right;
+  width: 20%;
+  margin-left: 5%;
+  margin-right: 4px;
+  position: relative;
+}

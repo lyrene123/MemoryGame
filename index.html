@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+  The following html page presents a webpage designed specially for
+  kids between the ages of 4 to 12 years old and provides a basic memory
+  game where the user needs to find the pairs of images hidden under the
+  alphabets images by clicking on them in order to reveal the background image
+  of the board.
+  author: Lyrene Labor, 1541901
+  version: Feb 2017
+-->
+<html>
+  <head> <!--Document head tag start-->
+    <title>Memory Game</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="gamestyles.css"/>
+    <script type="text/javascript" src="gamescript.js"> </script>
+  </head> <!--Document head tag end-->
+
+  <body id="body"><!--body tag start-->
+    <!--
+      The following div tag serves as a wrapper to position the webpage's
+      content to a specific position dictated by the css file linked to this
+      page.
+    -->
+    <div id="wrapper">
+        <header> <!--header tag start-->
+          <h1 id="spongebobTitle">S P O N G E B O B </h1>
+          <h1>MEMORY GAME!</h1>
+        </header> <!--header tag end-->
+
+        <!--
+          The following section will have the role of the board of the memory
+          game and will contain all the necessary images that make up the game
+          such as the background image of the board, the 8 pairs of images and
+          the 16 images that will cover the 8 pairs of images.
+        -->
+      <section id="board">
+        <!--This is the image that will be the background pic of the game board.-->
+        <img id="bottomPic" alt="board background" src=""/>
+
+        <!--
+          The section below will contain the middle layer of the game board
+          which contains the 8 pairs of images that the user needs to find and
+          match.
+        -->
+        <section id="middle">
+          <img id="middlePic1" class="middletile" alt="" src=""/>
+          <img id="middlePic2" class="middletile" alt="" src=""/>
+          <img id="middlePic3" class="middletile" alt="" src=""/>
+          <img id="middlePic4" class="middletile" alt="" src=""/>
+          <img id="middlePic5" class="middletile" alt="" src=""/>
+          <img id="middlePic6" class="middletile" alt="" src=""/>
+          <img id="middlePic7" class="middletile" alt="" src=""/>
+          <img id="middlePic8" class="middletile" alt="" src=""/>
+          <img id="middlePic9" class="middletile" alt="" src=""/>
+          <img id="middlePic10" class="middletile" alt="" src=""/>
+          <img id="middlePic11" class="middletile" alt="" src=""/>
+          <img id="middlePic12" class="middletile" alt="" src=""/>
+          <img id="middlePic13" class="middletile" alt="" src=""/>
+          <img id="middlePic14" class="middletile" alt="" src=""/>
+          <img id="middlePic15" class="middletile" alt="" src=""/>
+          <img id="middlePic16" class="middletile" alt="" src=""/>
+        </section> <!--End of middle section-->
+
+        <!--
+          The section below will contain the top layer of the game board
+          which contains the 16 alphabet images that will cover the 8 pairs
+          of images of the middle layer of the board.
+        -->
+        <section id="top">
+          <img id="A" class="toptile" alt="A" src="images/coverBoard/A.jpg"/>
+          <img id="B" class="toptile" alt="B" src="images/coverBoard/B.jpg"/>
+          <img id="C" class="toptile" alt="C" src="images/coverBoard/C.jpg"/>
+          <img id="D" class="toptile" alt="D" src="images/coverBoard/D.jpg"/>
+          <img id="E" class="toptile" alt="E" src="images/coverBoard/E.jpg"/>
+          <img id="F" class="toptile" alt="F" src="images/coverBoard/F.jpg"/>
+          <img id="G" class="toptile" alt="G" src="images/coverBoard/G.jpg"/>
+          <img id="H" class="toptile" alt="H" src="images/coverBoard/H.jpg"/>
+          <img id="I" class="toptile" alt="I" src="images/coverBoard/I.jpg"/>
+          <img id="J" class="toptile" alt="G" src="images/coverBoard/J.jpg"/>
+          <img id="K" class="toptile" alt="K" src="images/coverBoard/K.jpg"/>
+          <img id="L" class="toptile" alt="L" src="images/coverBoard/L.jpg"/>
+          <img id="M" class="toptile" alt="M" src="images/coverBoard/M.jpg"/>
+          <img id="N" class="toptile" alt="N" src="images/coverBoard/N.jpg"/>
+          <img id="O" class="toptile" alt="O" src="images/coverBoard/O.jpg"/>
+          <img id="P" class="toptile" alt="P" src="images/coverBoard/P.jpg"/>
+        </section><!--End of top section-->
+      </section><!--End of board section-->
+
+      <!--
+        The section below will contain the instructions that will help the user
+        understand the rules of the memory game
+      -->
+      <section id="gamerules">
+        <h2>LET'S PLAY!</h2>
+        <!--Simple unordered list containing steps to play the game-->
+        <ul><!--start of list-->
+          <li>Click/type a letter to see an image</li>
+          <li>Click/type another letter to see another image</li>
+          <li>If both images are the same, good job! </li>
+          <li>If both images are not the same, try again!</li>
+          <li>Continue finding pairs of images until all letters are gone.</li>
+          <li>Try to remember where images are placed!</li>
+        </ul><!--end of list-->
+      </section><!--End of instructions section-->
+
+      <!--
+        The footer below will contain the two buttons necessary to end a game
+        and to start a new game
+      -->
+      <footer>
+        <button id="end" type="button">End Game</button>
+        <button id="new" type="button">Start New Game</button>
+      </footer> <!--end of footer-->
+    </div><!--end of wrapper div-->
+  </body> <!--body tag end-->
+</html>
